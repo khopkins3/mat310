@@ -144,7 +144,7 @@ FROM database.table;
     SELECT * FROM unemath_Hopkins.Products WHERE category_id=430;
     Category 430 is wine glasses.
 11. Find all product id and names in category 430 manufactured by 428.
-    SELECT
+    SELECT * unemath_Hopkins.Products WHERE category_id=430 and manufacturer_id=428;
 12. How many products in category 430 manufactured by 428?
 13. How many countries make products contained in the store?
     SELECT COUNT (DISTINCT (COUNTRY)) FROM unemath_Hopkins.Products;
