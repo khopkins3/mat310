@@ -146,13 +146,22 @@ FROM database.table;
 11. Find all product id and names in category 430 manufactured by 428.
     SELECT * unemath_Hopkins.Products WHERE category_id=430 and manufacturer_id=428;
 12. How many products in category 430 manufactured by 428?
+        18
 13. How many countries make products contained in the store?
     SELECT COUNT (DISTINCT (COUNTRY)) FROM unemath_Hopkins.Products;
 14. How many products are manufactured in the USA?
+        SELECT * FROM unemath_Hopkins.Products WHERE country='USA';
 15. How many products cost the company less than $10?
+        SELECT * FROM unemath_Hopkins.Products WHERE price<10;
 16. How many products cost the company less than $10 and sell for more than $20?
+        SELECT * FROM unemath_Hopkins.Products WHERE price<10 and MSRP>20;
 17. How many products cost the company less than $10 and sell for less than $20?
+        SELECT * FROM unemath_Hopkins.Products WHERE price<10 and MSRP<20;
 18. Which products cost less than $10 and sell for more than $20?
+        duplicate questions to #16?
 19. Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
+        SELECT * FROM unemath_Hopkins.Products WHERE ship_weight<1 or ship_weight>20;
 20. Create your own query.
+        Which products have an inventory less than 10?
+        SELECT * FROM unemath_Hopkins.Products WHERE inventory<10;
 
