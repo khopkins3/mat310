@@ -125,11 +125,16 @@ Exercises
     NOT IN
 
 12.) What is wrong with the folling statement: `SELECT * FROM Products WHERE price BETWEEN 10, 100;
-    
+   There needs to be an AND instead of a comma between the numbers of 10 and 100  
   
-
 13.) Select products with length less than 12 inches and sort decsending.
+  SELECT * FROM unemath_Hopkins.Products WHERE length<12 ORDER BY length desc;
+
 14.) How many products are there whose price is between $10 and $20?
+  SELECT * FROM unemath_Hopkins.Products WHERE cost BETWEEN 10 AND 20;
+
 15.) How many products are there made in China whose MSRP is between $10 and $20.
+  SELECT * FROM unemath_Hopkins.Products WHERE country='China' and MSRP BETWEEN 10 AND 20;
+
 Contact GitHub API Training Shop Blog About
 © 2016 GitHub, Inc. Terms Privacy Security Status Help
