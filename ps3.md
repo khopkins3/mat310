@@ -21,7 +21,6 @@ Problem Set 3
 For question 7 - 8, Consider product orders. In particular, associated with an order is: customer name (first and last), address (street, city, state, zip), phone, email, the products orders (including item, quantity, and price).
 
 7.)Create a relational data model for orders. Consider applying normalization rules (discuss Monday)
-    Not exactly sure how to create a model or table on this site... but say one table is labeled 'Products' and another is 'Manufactureres', the manufacturer ID would be a foreign key in the 'Products' table but a primary key in the 'Manufacturers' table, showing a relationship.
     
     Reference-style: 
 ![alt text][pm]
