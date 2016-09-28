@@ -26,7 +26,7 @@ For question 7 - 8, Consider product orders. In particular, associated with an o
     Reference-style: 
 ![alt text][pm]
 
-[pm]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[pm]: https://github.com/khopkins3/mat310/blob/master/Project%20Model.png
 
 8.)For customer, could email be used as a primary key? If so, state why. Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
     Email would be a good primary key because it's unique to one person. The only disadvantage would be the person no longer using a certain email or a person having more than one email.
