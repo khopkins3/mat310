@@ -10,7 +10,7 @@ Problem Set 3
     A surrogate key is an auto-incremented integer with no connection to data. It is used independent of the item(s).
 
 4.)In the following equation, Area = Length x Width, identify the determinant(s).
-    
+    Length and Width are the determinants.
 
 5.)If a relation has no duplicate data, how can you be sure there is always at least one primary key?
     You can be sure there is always at least one primary key because the collection of all attributes in the relation can idetify a   unique row.
@@ -22,19 +22,18 @@ For question 7 - 8, Consider product orders. In particular, associated with an o
 
 7.)Create a relational data model for orders. Consider applying normalization rules (discuss Monday)
     
-    Reference-style: 
-![alt text][pm]
-
-[pm]: https://github.com/khopkins3/mat310/blob/master/Project%20Model.png
-
+   
 8.)For customer, could email be used as a primary key? If so, state why. Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
     Email would be a good primary key because it's unique to one person. The only disadvantage would be the person no longer using a certain email or a person having more than one email.
 
 9.)Given two relations S and R below find the Cartsian Product S x R.
-    ASK FOR HELP
+    A	B C	D	E
+    1	2 3	1	1
+    2	3 2	2	3
+    0   0 2	1	5
 
 10.)Find the natural join between the Faculty and Department relations below.
-    ASK FOR HELP
+    The natural join is Department.
 
 S
 
