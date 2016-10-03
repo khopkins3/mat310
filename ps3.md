@@ -24,19 +24,32 @@ For question 7 - 8, Consider product orders. In particular, associated with an o
     Table of customers
         *name_last
         *name_first
+        *customer_id (PK)
         *phone
-        *email
-        *zip (FK)
-    Address Table
-        *street_name
+        *street address
         *city
         *state
+        *zip (FK)
+        *email
+        
+    Zip Table
         *zip (PK)
-        *item_id (FK)
+        *city
+        *State
+    
     Products Table
-        *item_id (PK)
+        *product_id (PK)
+        *cost (cost company buys for)
+        *MSRP (price company sells for)
+        
+    Orders Table
+        *order_id (PK)
+        *customer_id (FK)
+        
+    Order Deatils Table
+        *order_detail_id (PK)
         *quantity
-        *price
+        
     
    
 8.)For customer, could email be used as a primary key? If so, state why. Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
