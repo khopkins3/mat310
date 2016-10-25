@@ -2,21 +2,66 @@ Problem Set 3
 
 1.)Define the terms: relation, tuple, attribute, record, and field.
     Tuple and Record are synonyms for 'row' and Attribute and Field are synonyms for 'column'.
+    
+    
+    
+__C__
+
+
+
+
 
 2.)What are keys in a relation?
-    Keys are unique indentifiers in a regulation.
+    Keys are unique indentifiers in a RELATION.
+    
+    
+    
+__C__
+
+
+
+
 
 3.)What is a surrogate key and how is it used?
     A surrogate key is an auto-incremented integer with no connection to data. It is used independent of the item(s).
+    
+    
+    
+__C.  Doesn't necessarily have to be auto-incremented, but efficient that way__
+
+
+
+
 
 4.)In the following equation, Area = Length x Width, identify the determinant(s).
     Length and Width are the determinants.
+    
+    
+__C__
+
+
+
 
 5.)If a relation has no duplicate data, how can you be sure there is always at least one primary key?
     You can be sure there is always at least one primary key because the collection of all attributes in the relation can idetify a   unique row.
+    
+    
+    
+__C__
+
+
+
 
 6.)Give an example of a relation. Determine a natural key for this relation.
     An example of a relation would be a table... A table of students that had student ID numbers, student first names, student last names, their department IDs, and their advisor's IDs.
+    
+    
+    
+__C_.  What are the natural keys?_
+
+
+
+
 
 For question 7 - 8, Consider product orders. In particular, associated with an order is: customer name (first and last), address (street, city, state, zip), phone, email, the products orders (including item, quantity, and price).
 
@@ -32,34 +77,80 @@ For question 7 - 8, Consider product orders. In particular, associated with an o
         *zip (FK)
         *email
         
+        
+        
+__C__
+
+
+
+
+        
     Zip Table
         *zip (PK)
         *city
         *State
+        
+        
+        
+__C__
+
+
+
+
     
     Products Table
         *product_id (PK)
         *cost (cost company buys for)
         *MSRP (price company sells for)
         
+        
+        
+__C__
+
+
+
+
+        
     Orders Table
         *order_id (PK)
         *customer_id (FK)
         
+        
+        
+__C__
+
+
+
+
+        
     Order Deatils Table
         *order_detail_id (PK)
         *quantity
+        __NEED TO HAVE ORDER_ID AS A FOREIGN KEY HERE__
+
+
         
     
    
 8.)For customer, could email be used as a primary key? If so, state why. Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
     Email would be a good primary key because it's unique to one person. The only disadvantage would be the person no longer using a certain email or a person having more than one email.
+    
+    
+    
+__C__
+
+
+
 
 9.)Given two relations S and R below find the Cartsian Product S x R.
     A	B C	D	E
     1	2 3	1	1
     2	3 2	2	3
     0   0 2	1	5
+
+
+__X.  Should be 6 rrecords__
+
 
 10.)Find the natural join between the Faculty and Department relations below.
     The natural join is Department.
