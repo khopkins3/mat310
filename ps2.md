@@ -92,49 +92,153 @@ Arithmetic operators (+, -, *, /) can be used to perform calculations on the res
 SELECT 1.35*price AS `Sale Price` FROM Products;
 Exercises
 
+
+
+
 1.) Select all products (UPC) made in China whose price is less than $50.
     SELECT * FROM unemath_Hopkins.Products WHERE country='China' and price<50;
+    
+    
+    
+__C__
+
+
+
     
 2.) Find products with "bird bath" in the description.
     SELECT * FROM unemath_Hopkins.Products WHERE description LIKE '%bird bath%';
     
+    
+    
+    
+__C__
+
+
+    
 3.) Find products whose cost is between $10 and $100.
     SELECT * FROM unemath_Hopkins.Products WHERE price BETWEEN 10 AND 100;
     
+    
+    
+    
+__C__
+
+
+    
 4.) Find products whose cost is less than or equal to $59.99.
     SELECT * FROM unemath_Hopkins.Products WHERE price<=59.99;
+    
+    
+    
+    
+__C__
+
+
+
 
 5.) Find products whose ID is between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
     SELECT * FROM unemath_Hopkins.Products WHERE product_id BETWEEN 5000 AND 6000 OR product_id IN (7483, 4939, 3452, 9848, 11293, 12001);
+    
+    
+    
+__C__
+
+
+
 
 6.) Find products that are not between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
     SELECT * FROM unemath_Hopkins.Products WHERE product_id not BETWEEN 5000 and 6000 and (not product_id IN(7483, 4939, 3452, 9848, 11293, 12001);
+    
+    
+    
+__C__
+
+
+
 
 7.) Find products whose country code is NULL.
     SELECT * FROM unemath_Hopkins.Products WHERE country IS NULL;
+    
+    
+    
+    
+__C__
+
+
+
 
 8.) Calculuate the shipping volume and report it as 'Volume'.
     SELECT ship_depth*ship_width*ship_length AS ship_volume FROM unemath_Hopkins.Products;
     
+    
+    
+__C__
+
+
+
+    
 9.) Suppose you want to have a 35% markup on all products and sales tax is 7.5%. Determine the 'Sales Price' of each product.
     SELECT ROUND(1.35*price+0.075*(1.35*price),2) AS sales_price FROM unemath_Hopkins.Products;
     
+    
+    
+    
+__C__
+
+
+
+    
 10.) True or False: Both conditions when using the OR operator must be true.
     FALSE
+    
+    
+__C__
+
+
+
 11.) What is the logical negation of the IN operator?
     NOT IN
 
+
+
+__C__
+
+
+
 12.) What is wrong with the folling statement: `SELECT * FROM Products WHERE price BETWEEN 10, 100;
    There needs to be an AND instead of a comma between the numbers of 10 and 100  
+   
+   
+   
+__C__
+
+
+
   
 13.) Select products with length less than 12 inches and sort decsending.
   SELECT * FROM unemath_Hopkins.Products WHERE length<12 ORDER BY length desc;
+  
+  
+  
+  
+__C__
+
+
+
 
 14.) How many products are there whose price is between $10 and $20?
   SELECT * FROM unemath_Hopkins.Products WHERE cost BETWEEN 10 AND 20;
+  
+  
+  
+  
+__C__
+
+
+
 
 15.) How many products are there made in China whose MSRP is between $10 and $20.
   SELECT * FROM unemath_Hopkins.Products WHERE country='China' and MSRP BETWEEN 10 AND 20;
 
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
+__C__
+
