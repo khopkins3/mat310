@@ -121,47 +121,172 @@ FROM database.table;
 1. What does SQL stand for?  How is it pronounced? 
     Structured Query Language
     Pronounced "sequel"
+    
+    
+__C__
+
+
 2. Are SQL commands case-sensitive?  How can you determine? 
     No. SQL commands are ususally all in capital letters though.
+    
+    
+__C__
+
+
 3. What does DQL stand for?
     Data Query Language
+    
+    
+__C__
+
+
 4. True or False:  Is it necessary to use the `FROM` clause with the select statement? 
     True
+    
+    
+    
+__C__
+
+
 5. True or False:  Is it necessary to use a `WHERE` clause?  If not, when and why would you use a `WHERE` clause?
     False
     Use WHERE to trim down selection
+    
+    
+    
+__C__
+
+
+
+
 6. What is the purpose of the `ORDER BY` clause?  What is its default value?
     ORDER BY will sort in ascending or descending order.
     The clause will automatically ascending unless specified otherwise. If you want descending, you have to type in DES.
+    
+    
+    
+__C__
+
+
 7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive? 
     Data in the products table are not case-sensitive.
     It should stay this way or else there would be too many options to search for.
+    
+    
+    
+__X.  Can be either__
+
+
+
+
 8. Select all product names.
     SELECT name FROM unemath_Hopkins.Products;
+    
+    
+    
+__C__
+
+
+
 9. List the MSRP for all products in ascending order.
     SELECT MSRP FROM unemath_Hopkins.Products ORDER BY MSRP;
+    
+    
+    
+__C__
+
+
+
 10. Find all products within  category 430.  What is category 430?
     SELECT * FROM unemath_Hopkins.Products WHERE category_id=430;
     Category 430 is wine glasses.
+    
+    
+    
+__C__
+
+
+
 11. Find all product id and names in category 430 manufactured by 428.
     SELECT * unemath_Hopkins.Products WHERE category_id=430 and manufacturer_id=428;
+    
+    
+    
+__C__
+
+
+
 12. How many products in category 430 manufactured by 428?
         18
+        
+        
+__C.  Please show SELECT query__
+
+
 13. How many countries make products contained in the store?
     SELECT COUNT (DISTINCT (COUNTRY)) FROM unemath_Hopkins.Products;
+    
+    
+    
+__C__
+
+
+
 14. How many products are manufactured in the USA?
         SELECT * FROM unemath_Hopkins.Products WHERE country='USA';
+        
+        
+        
+__C__
+
+
+
 15. How many products cost the company less than $10?
         SELECT * FROM unemath_Hopkins.Products WHERE price<10;
+        
+        
+        
+__C__
+
+
 16. How many products cost the company less than $10 and sell for more than $20?
         SELECT * FROM unemath_Hopkins.Products WHERE price<10 and MSRP>20;
+        
+        
+        
+__C__
+
+
+
 17. How many products cost the company less than $10 and sell for less than $20?
         SELECT * FROM unemath_Hopkins.Products WHERE price<10 and MSRP<20;
+        
+        
+        
+__C__
+
+
+
 18. Which products cost less than $10 and sell for more than $20?
         duplicate questions to #16?
 19. Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
         SELECT * FROM unemath_Hopkins.Products WHERE ship_weight<1 or ship_weight>20;
+        
+        
+        
+__C__
+
+
+
+
 20. Create your own query.
         Which products have an inventory less than 10?
         SELECT * FROM unemath_Hopkins.Products WHERE inventory<10;
+        
+        
+        
+        
+__C__
+
+
 
